@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title & SEO -->
+  <title>The Holiday Haul — Seasonal Finds, Festive Decor &amp; Gift Ideas</title>
+  <meta name="description" content="Thoughtfully curated seasonal decor, festive essentials, and gift ideas for every celebration. Discover your next favourite find at The Holiday Haul." />
+
+  <!-- Canonical URL — REPLACE with your real domain -->
+  <link rel="canonical" href="https://YOUR_DOMAIN.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Holiday Haul — Seasonal Finds, Festive Decor &amp; Gift Ideas" />
+  <meta property="og:description" content="Thoughtfully curated seasonal decor, festive essentials, and gift ideas for every celebration." />
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/" />
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/og-image.svg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Holiday Haul — Seasonal Finds &amp; Gift Ideas" />
+  <meta name="twitter:description" content="Seasonal decor, festive essentials, and gift ideas." />
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/og-image.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Skip Link (Accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo" id="site-logo" aria-label="The Holiday Haul — Return to top">
+        <span class="logo-name">The Holiday Haul</span>
+        <span class="logo-tagline">Seasonal Decor &amp; Gift Finds</span>
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Featured Finds</a></li>
+          <li><a href="#seasons">Seasons</a></li>
+          <li><a href="#gift-guides">Gift Guides</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav-search">
+          <span class="nav-search-icon" aria-hidden="true">🔍</span>
+          <label for="search-input" class="sr-only">Search products</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search finds…"
+            autocomplete="off"
+          />
+          <button type="button" class="search-clear-btn" id="search-clear-btn" aria-label="Clear search" hidden>&times;</button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ======================== HERO ======================== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <span class="hero-badge">Curated Seasonal Storefront</span>
+        <h1>Make Every Season Feel Special</h1>
+        <p>Thoughtfully curated decor, festive essentials, and gift inspiration for every holiday and home celebration.</p>
+        <div class="hero-cta-group">
+          <a href="#featured" class="btn btn-primary">
+            Explore Curated Finds <span class="arrow" aria-hidden="true">↓</span>
+          </a>
+          <a href="#seasons" class="btn btn-secondary">
+            Browse by Season
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================ SEASONAL QUICK SELECTOR ================ -->
+    <section class="categories" id="seasons" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Collections</span>
+          <h2 class="section-heading" id="categories-heading">Shop by Season</h2>
+          <p class="section-subtext">Select a celebration to jump directly to curated picks.</p>
+        </div>
+
+        <div class="category-grid" id="category-grid">
+          <a href="#collection-halloween" class="category-tile fade-in-up" data-category-target="halloween" aria-label="Halloween collection">
+            <span class="tile-icon" aria-hidden="true">🎃</span>
+            <span class="tile-label">Halloween</span>
+            <span class="tile-count">Autumn &amp; Spooky</span>
+          </a>
+          <a href="#collection-christmas" class="category-tile fade-in-up" data-category-target="christmas" aria-label="Christmas collection">
+            <span class="tile-icon" aria-hidden="true">🎄</span>
+            <span class="tile-label">Christmas</span>
+            <span class="tile-count">Festive &amp; Warm</span>
+          </a>
+          <a href="#collection-newyear" class="category-tile fade-in-up" data-category-target="newyear" aria-label="New Year's Eve collection">
+            <span class="tile-icon" aria-hidden="true">🥂</span>
+            <span class="tile-label">New Year's</span>
+            <span class="tile-count">Sparkle &amp; Cheers</span>
+          </a>
+          <a href="#collection-valentines" class="category-tile fade-in-up" data-category-target="valentines" aria-label="Valentine's Day collection">
+            <span class="tile-icon" aria-hidden="true">💝</span>
+            <span class="tile-label">Valentine's</span>
+            <span class="tile-count">Romance &amp; Gifts</span>
+          </a>
+          <a href="#collection-everyday" class="category-tile fade-in-up" data-category-target="everyday" aria-label="Everyday Home Finds collection">
+            <span class="tile-icon" aria-hidden="true">🏡</span>
+            <span class="tile-label">Everyday Home</span>
+            <span class="tile-count">Cozy Living</span>
+          </a>
+          <a href="#gift-guides" class="category-tile fade-in-up" data-category-target="giftguide" aria-label="Gift Guides">
+            <span class="tile-icon" aria-hidden="true">🎁</span>
+            <span class="tile-label">Gift Guides</span>
+            <span class="tile-count">Curated Budgets</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================ PRESERVED PRODUCT GRID ================ -->
+    <section class="products-section" id="featured" aria-labelledby="featured-heading">
+      <div class="container">
+        
+        <!-- Section Header with dynamic status -->
+        <div class="section-header fade-in-up">
+          <div class="section-header-top">
+            <span class="section-label">Curated Storefront</span>
+            <span class="product-count-badge" id="product-count-badge">Loading finds…</span>
+          </div>
+          <h2 class="section-heading" id="featured-heading">Curated Product Finds</h2>
+          <p class="section-subtext" id="featured-subtext">
+            Hand-picked decor, festive favorites, and thoughtful gifts.
+          </p>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar-wrapper fade-in-up">
+          <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter products by category or guide">
+            <button class="filter-chip active" data-filter="all">All Finds</button>
+            <button class="filter-chip" data-filter="halloween">🎃 Halloween</button>
+            <button class="filter-chip" data-filter="christmas">🎄 Christmas</button>
+            <button class="filter-chip" data-filter="newyear">🥂 New Year's</button>
+            <button class="filter-chip" data-filter="valentines">💝 Valentine's</button>
+            <button class="filter-chip" data-filter="everyday">🏡 Everyday</button>
+            <span class="filter-divider" aria-hidden="true"></span>
+            <button class="filter-chip chip-guide" data-filter="guide:under25">💰 Under $25</button>
+            <button class="filter-chip chip-guide" data-filter="guide:forher">💐 For Her</button>
+            <button class="filter-chip chip-guide" data-filter="guide:hostess">🍷 Hostess</button>
+            <button class="filter-chip chip-guide" data-filter="guide:party">🎉 Party</button>
+          </div>
+        </div>
+
+        <!-- Active Filter Indicator & Reset -->
+        <div class="active-filter-indicator" id="active-filter-indicator" hidden>
+          <span class="indicator-text" id="indicator-text"></span>
+          <button type="button" class="btn-text-reset" id="btn-reset-filters">Show All Finds</button>
+        </div>
+
+        <!-- Preserved Product Grid -->
+        <div class="product-grid" id="featured-grid" aria-live="polite"></div>
+
+        <!-- Transparent Affiliate Bar -->
+        <div class="affiliate-disclosure-box">
+          <span class="affiliate-badge">Affiliate Transparency</span>
+          <p>
+            As an Amazon Associate I earn from qualifying purchases. When you click our curated product buttons and make a purchase on Amazon, we may earn a small referral commission at no additional cost to you.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================ GIFT GUIDES SECTION ================ -->
+    <section class="guides-section" id="gift-guides" aria-labelledby="guides-heading">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-label">Gifting</span>
+          <h2 class="section-heading" id="guides-heading">Gift Inspiration Guides</h2>
+          <p class="section-subtext">Looking for the ideal gift? Browse curated recommendations by recipient and budget.</p>
+        </div>
+
+        <div class="guide-grid">
+          <a href="#guide-under25" class="guide-card fade-in-up" data-guide-target="under25" id="guide-card-under25">
+            <span class="guide-icon" aria-hidden="true">💰</span>
+            <span class="guide-label">Gifts Under $25</span>
+            <span class="guide-desc">Budget-friendly &amp; stylish finds</span>
+          </a>
+          <a href="#guide-forher" class="guide-card fade-in-up" data-guide-target="forher" id="guide-card-forher">
+            <span class="guide-icon" aria-hidden="true">💐</span>
+            <span class="guide-label">Gifts for Her</span>
+            <span class="guide-desc">Thoughtful, cozy &amp; personal</span>
+          </a>
+          <a href="#guide-hostess" class="guide-card fade-in-up" data-guide-target="hostess" id="guide-card-hostess">
+            <span class="guide-icon" aria-hidden="true">🍷</span>
+            <span class="guide-label">Hostess Gift Ideas</span>
+            <span class="guide-desc">Say thank you in style</span>
+          </a>
+          <a href="#guide-party" class="guide-card fade-in-up" data-guide-target="party" id="guide-card-party">
+            <span class="guide-icon" aria-hidden="true">🎉</span>
+            <span class="guide-label">Party Essentials</span>
+            <span class="guide-desc">Host an unforgettable gathering</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================ DEEP LINK ANCHORS (PRESERVED FOR PINTEREST & EXTERNAL LINKS) ================ -->
+    <!-- These clean anchor markers ensure pins & direct links land with instant filtering -->
+    <div id="collection-halloween" class="anchor-target" aria-hidden="true"></div>
+    <div id="halloween-picks" class="anchor-target" aria-hidden="true"></div>
+    <div id="collection-christmas" class="anchor-target" aria-hidden="true"></div>
+    <div id="christmas-picks" class="anchor-target" aria-hidden="true"></div>
+    <div id="collection-newyear" class="anchor-target" aria-hidden="true"></div>
+    <div id="newyear-picks" class="anchor-target" aria-hidden="true"></div>
+    <div id="collection-valentines" class="anchor-target" aria-hidden="true"></div>
+    <div id="valentines-picks" class="anchor-target" aria-hidden="true"></div>
+    <div id="collection-everyday" class="anchor-target" aria-hidden="true"></div>
+    <div id="everyday-picks" class="anchor-target" aria-hidden="true"></div>
+    <div id="guide-under25" class="anchor-target" aria-hidden="true"></div>
+    <div id="guide-forher" class="anchor-target" aria-hidden="true"></div>
+    <div id="guide-hostess" class="anchor-target" aria-hidden="true"></div>
+    <div id="guide-party" class="anchor-target" aria-hidden="true"></div>
+
+
+    <!-- ================ ABOUT ================ -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-inner fade-in-up">
+          <span class="section-label">About Us</span>
+          <h2 class="section-heading" id="about-heading">The Holiday Haul</h2>
+          <p>
+            The Holiday Haul makes seasonal shopping joyful and simple. We hand-select high-quality seasonal decor, cozy everyday accents, and memorable gifts across every major celebration so you spend less time searching and more time celebrating.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <button type="button" class="footer-link-btn" id="open-disclosure-btn">Affiliate Disclosure</button>
+        <button type="button" class="footer-link-btn" id="open-privacy-btn">Privacy Policy</button>
+        <button type="button" class="footer-link-btn" id="open-contact-btn">Contact</button>
+      </nav>
+
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Pinterest profile (opens in new tab)">
+          <span>📌 Pinterest</span>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile (opens in new tab)">
+          <span>📷 Instagram</span>
+        </a>
+      </div>
+
+      <p class="footer-disclosure">
+        As an Amazon Associate I earn from qualifying purchases. Product links on this site may be affiliate links. All product information is for reference only — always verify current prices, availability, and seller details directly on Amazon before purchasing.
+      </p>
+
+      <p class="footer-copyright">
+        &copy; 2026 The Holiday Haul. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       INTERACTIVE MODALS (COMPLIANCE & CONTACT)
+       ============================================================ -->
+  
+  <!-- Affiliate Disclosure Modal -->
+  <dialog class="modal" id="modal-disclosure" aria-labelledby="modal-disclosure-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-disclosure-title">Amazon Associates &amp; FTC Disclosure</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>The Holiday Haul</strong> is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com and affiliated sites.</p>
+        <h4>How We Operate</h4>
+        <p>When you click on an outbound affiliate link on this website and purchase an item, we may receive a small commission from Amazon at no extra cost to you. This does not influence our editorial integrity or product curation.</p>
+        <h4>Pricing &amp; Availability Notice</h4>
+        <p>Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon at the time of purchase will apply to the purchase of this product.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-small" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Privacy Policy Modal -->
+  <dialog class="modal" id="modal-privacy" aria-labelledby="modal-privacy-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-privacy-title">Privacy Policy</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>At <strong>The Holiday Haul</strong>, we respect your privacy. This storefront is a static website hosted on Cloudflare Pages.</p>
+        <h4>Data Collection &amp; Cookies</h4>
+        <p>We do not collect personal identifying information or maintain private user databases on this site. When you click outward links to Amazon, third-party cookies may be placed by Amazon to track affiliate referrals as governed by Amazon's Privacy Policy.</p>
+        <h4>Hosting &amp; Analytics</h4>
+        <p>Basic non-identifiable technical access logs (such as IP address, browser type, and referrer) may be processed by our web host (Cloudflare) strictly for security, performance optimization, and DDoS mitigation.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-small" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Contact Modal -->
+  <dialog class="modal" id="modal-contact" aria-labelledby="modal-contact-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-contact-title">Contact &amp; Inquiries</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Have a question about a seasonal find, suggestion for a gift guide, or business inquiry?</p>
+        <p>Feel free to reach out to our curation team directly:</p>
+        <div class="contact-box">
+          <p><strong>Email:</strong> <a href="mailto:hello@theholidayhaul.com">hello@theholidayhaul.com</a></p>
+          <p><strong>Pinterest:</strong> <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">@TheHolidayHaul</a></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-small" data-close-modal>Close</button>
+      </div>
+    </div>
+  </dialog>
+
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Scripts — products.js must load before script.js -->
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
