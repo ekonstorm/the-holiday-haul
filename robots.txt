@@ -1,0 +1,7 @@
+# robots.txt — The Holiday Haul
+# Replace YOUR_DOMAIN.com with your actual domain before deploying.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR_DOMAIN.com/sitemap.xml

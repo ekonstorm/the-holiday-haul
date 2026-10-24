@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2" />
+      <stop offset="100%" stop-color="#EFE8DE" />
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="rgba(166, 83, 50, 0.12)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  
+  <!-- Outer subtle border -->
+  <rect x="30" y="30" width="1140" height="570" rx="16" fill="none" stroke="rgba(41, 39, 34, 0.1)" stroke-width="2" />
+
+  <!-- Accent top bar -->
+  <rect x="80" y="110" width="60" height="6" rx="3" fill="#A65332" />
+
+  <!-- Category icon badges -->
+  <g transform="translate(80, 150)">
+    <text font-size="36" fill="#777067">🎃 &nbsp; 🎄 &nbsp; 🥂 &nbsp; 💝 &nbsp; 🏡 &nbsp; 🎁</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="80" y="270" font-family="'Playfair Display', Georgia, serif" font-size="68" font-weight="700" fill="#292722" letter-spacing="-0.02em">
+    The Holiday Haul
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="340" font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="400" fill="#777067">
+    Seasonal Finds · Festive Decor · Curated Gift Guides
+  </text>
+
+  <!-- Divider -->
+  <line x1="80" y1="390" x2="380" y2="390" stroke="rgba(166, 83, 50, 0.3)" stroke-width="2" />
+
+  <!-- Value prop tags -->
+  <g transform="translate(80, 440)" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="600" fill="#A65332">
+    <rect x="0" y="0" width="180" height="42" rx="21" fill="rgba(166, 83, 50, 0.08)" stroke="rgba(166, 83, 50, 0.2)" stroke-width="1"/>
+    <text x="90" y="27" text-anchor="middle">Thoughtful Picks</text>
+
+    <rect x="200" y="0" width="190" height="42" rx="21" fill="rgba(166, 83, 50, 0.08)" stroke="rgba(166, 83, 50, 0.2)" stroke-width="1"/>
+    <text x="295" y="27" text-anchor="middle">Budget &amp; Hostess</text>
+
+    <rect x="410" y="0" width="170" height="42" rx="21" fill="rgba(166, 83, 50, 0.08)" stroke="rgba(166, 83, 50, 0.2)" stroke-width="1"/>
+    <text x="495" y="27" text-anchor="middle">Amazon Finds</text>
+  </g>
+
+  <!-- Bottom branding badge -->
+  <text x="80" y="550" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="500" fill="#999187">
+    theholidayhaul.pages.dev · Curated Seasonal Affiliate Collection
+  </text>
+</svg>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — The Holiday Haul</title>
+  <meta name="description" content="The page you are looking for does not exist. Explore our curated seasonal decor and gift guides at The Holiday Haul." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .not-found-container {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-4xl) var(--space-lg);
+    }
+    .not-found-tag {
+      font-size: 4rem;
+      margin-bottom: var(--space-md);
+      line-height: 1;
+    }
+    .not-found-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: var(--space-md);
+      color: var(--text);
+    }
+    .not-found-text {
+      color: var(--text-muted);
+      max-width: 480px;
+      margin-bottom: var(--space-xl);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="The Holiday Haul — Home">
+        <span class="logo-name">The Holiday Haul</span>
+        <span class="logo-tagline">Seasonal Finds · Festive Decor</span>
+      </a>
+      <a href="index.html" class="btn btn-secondary btn-small">Return Home</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="not-found-container">
+      <div class="not-found-tag" aria-hidden="true">🎁</div>
+      <h1 class="not-found-heading">Page Not Found</h1>
+      <p class="not-found-text">
+        The holiday find or page you're searching for seems to have moved or taken a seasonal break.
+      </p>
+      <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; justify-content: center;">
+        <a href="index.html" class="btn btn-primary">
+          Back to Storefront <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="index.html#featured" class="btn btn-secondary">
+          Explore Featured Finds
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copyright">&copy; 2026 The Holiday Haul. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
